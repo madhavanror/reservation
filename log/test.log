@@ -7598,3 +7598,370 @@ Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.5ms)
   [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.4ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:20:59.998382"], ["updated_at", "2019-05-29 20:20:59.998382"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.7ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 515], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.015180"], ["updated_at", "2019-05-29 20:21:00.015180"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.3ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.020118"], ["updated_at", "2019-05-29 20:21:00.020118"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.3ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 516], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.028730"], ["updated_at", "2019-05-29 20:21:00.028730"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.2ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.153544"], ["updated_at", "2019-05-29 20:21:00.153544"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.3ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 517], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.155316"], ["updated_at", "2019-05-29 20:21:00.155316"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.2ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "09252012-00001"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.156857"], ["updated_at", "2019-05-29 20:21:00.156857"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.3ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.161489"], ["updated_at", "2019-05-29 20:21:00.161489"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.4ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 519], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.163636"], ["updated_at", "2019-05-29 20:21:00.163636"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.2ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.168489"], ["updated_at", "2019-05-29 20:21:00.168489"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.4ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 520], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.170228"], ["updated_at", "2019-05-29 20:21:00.170228"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.3ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "09252012-00001"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.171864"], ["updated_at", "2019-05-29 20:21:00.171864"]]
+  [1m[36mExcavator Create (0.4ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 521], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.173044"], ["updated_at", "2019-05-29 20:21:00.173044"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.2ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.176531"], ["updated_at", "2019-05-29 20:21:00.176531"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.3ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 522], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.178424"], ["updated_at", "2019-05-29 20:21:00.178424"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.3ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.184617"], ["updated_at", "2019-05-29 20:21:00.184617"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.3ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 523], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.186728"], ["updated_at", "2019-05-29 20:21:00.186728"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.4ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.190749"], ["updated_at", "2019-05-29 20:21:00.190749"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.3ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 524], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.193091"], ["updated_at", "2019-05-29 20:21:00.193091"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.2ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.197733"], ["updated_at", "2019-05-29 20:21:00.197733"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.3ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 525], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.199495"], ["updated_at", "2019-05-29 20:21:00.199495"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.2ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.202982"], ["updated_at", "2019-05-29 20:21:00.202982"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.3ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 526], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.204640"], ["updated_at", "2019-05-29 20:21:00.204640"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.3ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.210384"], ["updated_at", "2019-05-29 20:21:00.210384"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.4ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 527], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.213768"], ["updated_at", "2019-05-29 20:21:00.213768"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.9ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.219335"], ["updated_at", "2019-05-29 20:21:00.219335"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.3ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 528], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.222190"], ["updated_at", "2019-05-29 20:21:00.222190"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.3ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.228383"], ["updated_at", "2019-05-29 20:21:00.228383"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.3ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 529], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.230498"], ["updated_at", "2019-05-29 20:21:00.230498"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Started GET "/api/v1/tickets/show_tickets" for 127.0.0.1 at 2019-05-30 01:51:00 +0530
+Processing by Api::V1::TicketsController#show_tickets as JSON
+  Parameters: {"ticket"=>{}}
+  [1m[36mTicket Load (0.4ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets"[0m
+  [1m[36mExcavator Load (0.3ms)[0m  [1m[34mSELECT "excavators".* FROM "excavators" WHERE "excavators"."ticket_id" = $1[0m  [["ticket_id", 529]]
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.3ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.252499"], ["updated_at", "2019-05-29 20:21:00.252499"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.3ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 530], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.254592"], ["updated_at", "2019-05-29 20:21:00.254592"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Started GET "/api/v1/tickets/ticket/530" for 127.0.0.1 at 2019-05-30 01:51:00 +0530
+Processing by Api::V1::TicketsController#show_ticket as JSON
+  Parameters: {"id"=>"530", "ticket"=>{}}
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = $1 LIMIT $2[0m  [["id", 530], ["LIMIT", 1]]
+  [1m[36mExcavator Load (0.2ms)[0m  [1m[34mSELECT "excavators".* FROM "excavators" WHERE "excavators"."ticket_id" = $1[0m  [["ticket_id", 530]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.2ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.264234"], ["updated_at", "2019-05-29 20:21:00.264234"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.3ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 531], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.266072"], ["updated_at", "2019-05-29 20:21:00.266072"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Started POST "/api/v1/tickets" for 127.0.0.1 at 2019-05-30 01:51:00 +0530
+Processing by Api::V1::TicketsController#create as JSON
+  Parameters: {"ContactCenter"=>"UPCA", "RequestNumber"=>"09252012-00001", "ReferenceRequestNumber"=>"", "VersionNumber"=>"0", "SequenceNumber"=>"2421", "RequestType"=>"Normal", "RequestAction"=>"Restake", "DateTimes"=>{"RequestTakenDateTime"=>"2011/07/02 23:09:38", "TransmissionDateTime"=>"", "LegalDateTime"=>"2011/07/08 07:00:00", "ResponseDueDateTime"=>"2011/07/13 23:59:59", "RestakeDate"=>"2011/07/21 00:00:00", "ExpirationDate"=>"2011/07/26 00:00:00", "LPMeetingAcceptDueDate"=>"", "OverheadBeginDate"=>"", "OverheadEndDate"=>""}, "ServiceArea"=>{"PrimaryServiceAreaCode"=>{"SACode"=>"ZZGL103"}, "AdditionalServiceAreaCodes"=>{"SACode"=>["ZZL01", "ZZL02", "ZZL03"]}}, "Excavator"=>{"CompanyName"=>"John Doe CONSTRUCTION", "Address"=>"555 Some RD", "City"=>"SOME PARK", "State"=>"ZZ", "Zip"=>"55555", "Type"=>"Excavator", "Contact"=>{"Name"=>"Johnny Doe", "Phone"=>"1115552345", "Email"=>"example@example.com"}, "FieldContact"=>{"Name"=>"Field Contact", "Phone"=>"1235557924", "Email"=>"example@example.com"}, "CrewOnsite"=>"true"}, "ExcavationInfo"=>{"TypeOfWork"=>"rpr man hole tops", "WorkDoneFor"=>"gpc", "ProjectDuration"=>"60 days", "ProjectStartDate"=>"2011/07/08 07:00:00", "Explosives"=>"No", "UndergroundOverhead"=>"Underground", "HorizontalBoring"=>"Road, Driveway, and Sidewalk", "Whitelined"=>"No", "LocateInstructions"=>"locate along the r/o/w on both sides of the rd - including the rd itself - from inter to inter ", "Remarks"=>"Previous Request Number:05161-120-011 revious Request Number:06044-254-020 v revious Request Number:06171-300-030", "DigsiteInfo"=>{"LookupBy"=>"MANUAL", "LocationType"=>"Multiple Address", "Subdivision"=>"", "AddressInfo"=>{"State"=>"ST", "County"=>"COUNTY", "Place"=>"PLACE", "Zip"=>"", "Address"=>{"AddressNum"=>["Address 1", "Address 2"]}, "Street"=>{"Prefix"=>"", "Name"=>"Trinity", "Type"=>"Ave", "Suffix"=>"SW"}}, "NearStreet"=>{"State"=>"XX", "County"=>"SomeCounty", "Place"=>"City", "Prefix"=>"", "Name"=>"", "Type"=>"", "Suffix"=>""}, "Intersection"=>{"ItoI"=>[{"State"=>"XX", "County"=>"FULERTON", "Place"=>"NORCROSS", "Prefix"=>"", "Name"=>"London", "Type"=>"St", "Suffix"=>"SW"}, {"State"=>"ZZ", "County"=>"COUNTY", "Place"=>"ATLANTA", "Prefix"=>"", "Name"=>"Jefferson", "Type"=>"Ave", "Suffix"=>"SW"}]}, "WellKnownText"=>"POLYGON((-81.13390268058475 32.07206917625161,-81.14660562247929 32.04064386441295,-81.08858407706913 32.02259853170128,-81.05322183341679 32.02434500961698,-81.05047525138554 32.042681017283066,-81.0319358226746 32.06537765335268,-81.01202310294804 32.078469305179404,-81.02850259513554 32.07963291684719,-81.07759774894413 32.07090546831167,-81.12154306144413 32.08806865844325,-81.13390268058475 32.07206917625161))"}}, "ticket"=>{}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.3ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "sequence_number", "request_type", "primary_sa_code", "additional_sa_code", "digi_site_info", "due_date_time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["request_number", "09252012-00001"], ["sequence_number", "2421"], ["request_type", "Normal"], ["primary_sa_code", "ZZGL103"], ["additional_sa_code", "---\n- ZZL01\n- ZZL02\n- ZZL03\n"], ["digi_site_info", "POLYGON((-81.13390268058475 32.07206917625161,-81.14660562247929 32.04064386441295,-81.08858407706913 32.02259853170128,-81.05322183341679 32.02434500961698,-81.05047525138554 32.042681017283066,-81.0319358226746 32.06537765335268,-81.01202310294804 32.078469305179404,-81.02850259513554 32.07963291684719,-81.07759774894413 32.07090546831167,-81.12154306144413 32.08806865844325,-81.13390268058475 32.07206917625161))"], ["due_date_time", "2011-07-13 23:59:59"], ["created_at", "2019-05-29 20:21:00.270760"], ["updated_at", "2019-05-29 20:21:00.270760"]]
+  [1m[36mExcavator Create (0.4ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "address", "city", "state", "zip_code", "crew_on_site", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["ticket_id", 532], ["company_name", "John Doe CONSTRUCTION"], ["address", "555 Some RD"], ["city", "SOME PARK"], ["state", "ZZ"], ["zip_code", "55555"], ["crew_on_site", true], ["created_at", "2019-05-29 20:21:00.273520"], ["updated_at", "2019-05-29 20:21:00.273520"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Completed 201 Created in 7ms (Views: 0.8ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.3ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.281769"], ["updated_at", "2019-05-29 20:21:00.281769"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.3ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 533], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.283665"], ["updated_at", "2019-05-29 20:21:00.283665"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Processing by Api::V1::TicketsController#show_tickets as HTML
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets"[0m
+  [1m[36mExcavator Load (0.2ms)[0m  [1m[34mSELECT "excavators".* FROM "excavators" WHERE "excavators"."ticket_id" = $1[0m  [["ticket_id", 533]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.3ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.291100"], ["updated_at", "2019-05-29 20:21:00.291100"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.3ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 534], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.293026"], ["updated_at", "2019-05-29 20:21:00.293026"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Load (0.2ms)[0m  [1m[34mSELECT  "excavators".* FROM "excavators" WHERE "excavators"."ticket_id" = $1 LIMIT $2[0m  [["ticket_id", 534], ["LIMIT", 1]]
+  [1m[36mExcavator Destroy (0.2ms)[0m  [1m[31mDELETE FROM "excavators" WHERE "excavators"."id" = $1[0m  [["id", 478]]
+  [1m[36mTicket Destroy (0.4ms)[0m  [1m[31mDELETE FROM "tickets" WHERE "tickets"."id" = $1[0m  [["id", 534]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Processing by Api::V1::TicketsController#show_tickets as HTML
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets"[0m
+Completed 404 Not Found in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.3ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.304227"], ["updated_at", "2019-05-29 20:21:00.304227"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.3ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 535], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.306604"], ["updated_at", "2019-05-29 20:21:00.306604"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Processing by Api::V1::TicketsController#show_ticket as HTML
+  Parameters: {"id"=>"535"}
+  [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = $1 LIMIT $2[0m  [["id", 535], ["LIMIT", 1]]
+  [1m[36mExcavator Load (0.3ms)[0m  [1m[34mSELECT "excavators".* FROM "excavators" WHERE "excavators"."ticket_id" = $1[0m  [["ticket_id", 535]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.3ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.316208"], ["updated_at", "2019-05-29 20:21:00.316208"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.3ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 536], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.318410"], ["updated_at", "2019-05-29 20:21:00.318410"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Processing by Api::V1::TicketsController#show_ticket as HTML
+  Parameters: {"id"=>"34567"}
+  [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."id" = $1 LIMIT $2[0m  [["id", 34567], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.2ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.325190"], ["updated_at", "2019-05-29 20:21:00.325190"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.3ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 537], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.327097"], ["updated_at", "2019-05-29 20:21:00.327097"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Processing by Api::V1::TicketsController#create as JSON
+  Parameters: {"ContactCenter"=>"UPCA", "DateTimes"=>{"ExpirationDate"=>"2011/07/26 00:00:00", "LPMeetingAcceptDueDate"=>"", "LegalDateTime"=>"2011/07/08 07:00:00", "OverheadBeginDate"=>"", "OverheadEndDate"=>"", "RequestTakenDateTime"=>"2011/07/02 23:09:38", "ResponseDueDateTime"=>"2011/07/13 23:59:59", "RestakeDate"=>"2011/07/21 00:00:00", "TransmissionDateTime"=>""}, "ExcavationInfo"=>{"DigsiteInfo"=>{"AddressInfo"=>{"Address"=>{"AddressNum"=>["Address 1", "Address 2"]}, "County"=>"COUNTY", "Place"=>"PLACE", "State"=>"ST", "Street"=>{"Name"=>"Trinity", "Prefix"=>"", "Suffix"=>"SW", "Type"=>"Ave"}, "Zip"=>""}, "Intersection"=>{"ItoI"=>[{"State"=>"XX", "County"=>"FULERTON", "Place"=>"NORCROSS", "Prefix"=>"", "Name"=>"London", "Type"=>"St", "Suffix"=>"SW"}, {"State"=>"ZZ", "County"=>"COUNTY", "Place"=>"ATLANTA", "Prefix"=>"", "Name"=>"Jefferson", "Type"=>"Ave", "Suffix"=>"SW"}]}, "LocationType"=>"Multiple Address", "LookupBy"=>"MANUAL", "NearStreet"=>{"County"=>"SomeCounty", "Name"=>"", "Place"=>"City", "Prefix"=>"", "State"=>"XX", "Suffix"=>"", "Type"=>""}, "Subdivision"=>"", "WellKnownText"=>"POLYGON((-81.13390268058475 32.07206917625161,-81.14660562247929 32.04064386441295,-81.08858407706913 32.02259853170128,-81.05322183341679 32.02434500961698,-81.05047525138554 32.042681017283066,-81.0319358226746 32.06537765335268,-81.01202310294804 32.078469305179404,-81.02850259513554 32.07963291684719,-81.07759774894413 32.07090546831167,-81.12154306144413 32.08806865844325,-81.13390268058475 32.07206917625161))"}, "Explosives"=>"No", "HorizontalBoring"=>"Road, Driveway, and Sidewalk", "LocateInstructions"=>"locate along the r/o/w on both sides of the rd - including the rd itself - from inter to inter ", "ProjectDuration"=>"60 days", "ProjectStartDate"=>"2011/07/08 07:00:00", "Remarks"=>"Previous Request Number:05161-120-011 revious Request Number:06044-254-020 v revious Request Number:06171-300-030", "TypeOfWork"=>"rpr man hole tops", "UndergroundOverhead"=>"Underground", "Whitelined"=>"No", "WorkDoneFor"=>"gpc"}, "Excavator"=>{"Address"=>"555 Some RD", "City"=>"SOME PARK", "CompanyName"=>"John Doe CONSTRUCTION", "Contact"=>{"Email"=>"example@example.com", "Name"=>"Johnny Doe", "Phone"=>"1115552345"}, "CrewOnsite"=>"true", "FieldContact"=>{"Email"=>"example@example.com", "Name"=>"Field Contact", "Phone"=>"1235557924"}, "State"=>"ZZ", "Type"=>"Excavator", "Zip"=>"55555"}, "ReferenceRequestNumber"=>"", "RequestAction"=>"Restake", "RequestNumber"=>"09252012-00001", "SequenceNumber"=>"2421", "ServiceArea"=>{"AdditionalServiceAreaCodes"=>{"SACode"=>["ZZL01", "ZZL02", "ZZL03"]}, "PrimaryServiceAreaCode"=>{"SACode"=>"ZZGL103"}}, "VersionNumber"=>"0"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_2[0m
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.4ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.339976"], ["updated_at", "2019-05-29 20:21:00.339976"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.3ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 538], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.341981"], ["updated_at", "2019-05-29 20:21:00.341981"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Processing by Api::V1::TicketsController#create as JSON
+  Parameters: {"ContactCenter"=>"UPCA", "DateTimes"=>{"ExpirationDate"=>"2011/07/26 00:00:00", "LPMeetingAcceptDueDate"=>"", "LegalDateTime"=>"2011/07/08 07:00:00", "OverheadBeginDate"=>"", "OverheadEndDate"=>"", "RequestTakenDateTime"=>"2011/07/02 23:09:38", "ResponseDueDateTime"=>"2011/07/13 23:59:59", "RestakeDate"=>"2011/07/21 00:00:00", "TransmissionDateTime"=>""}, "ExcavationInfo"=>{"DigsiteInfo"=>{"AddressInfo"=>{"Address"=>{"AddressNum"=>["Address 1", "Address 2"]}, "County"=>"COUNTY", "Place"=>"PLACE", "State"=>"ST", "Street"=>{"Name"=>"Trinity", "Prefix"=>"", "Suffix"=>"SW", "Type"=>"Ave"}, "Zip"=>""}, "Intersection"=>{"ItoI"=>[{"State"=>"XX", "County"=>"FULERTON", "Place"=>"NORCROSS", "Prefix"=>"", "Name"=>"London", "Type"=>"St", "Suffix"=>"SW"}, {"State"=>"ZZ", "County"=>"COUNTY", "Place"=>"ATLANTA", "Prefix"=>"", "Name"=>"Jefferson", "Type"=>"Ave", "Suffix"=>"SW"}]}, "LocationType"=>"Multiple Address", "LookupBy"=>"MANUAL", "NearStreet"=>{"County"=>"SomeCounty", "Name"=>"", "Place"=>"City", "Prefix"=>"", "State"=>"XX", "Suffix"=>"", "Type"=>""}, "Subdivision"=>"", "WellKnownText"=>"POLYGON((-81.13390268058475 32.07206917625161,-81.14660562247929 32.04064386441295,-81.08858407706913 32.02259853170128,-81.05322183341679 32.02434500961698,-81.05047525138554 32.042681017283066,-81.0319358226746 32.06537765335268,-81.01202310294804 32.078469305179404,-81.02850259513554 32.07963291684719,-81.07759774894413 32.07090546831167,-81.12154306144413 32.08806865844325,-81.13390268058475 32.07206917625161))"}, "Explosives"=>"No", "HorizontalBoring"=>"Road, Driveway, and Sidewalk", "LocateInstructions"=>"locate along the r/o/w on both sides of the rd - including the rd itself - from inter to inter ", "ProjectDuration"=>"60 days", "ProjectStartDate"=>"2011/07/08 07:00:00", "Remarks"=>"Previous Request Number:05161-120-011 revious Request Number:06044-254-020 v revious Request Number:06171-300-030", "TypeOfWork"=>"rpr man hole tops", "UndergroundOverhead"=>"Underground", "Whitelined"=>"No", "WorkDoneFor"=>"gpc"}, "Excavator"=>{"Address"=>"555 Some RD", "City"=>"SOME PARK", "CompanyName"=>"John Doe CONSTRUCTION", "Contact"=>{"Email"=>"example@example.com", "Name"=>"Johnny Doe", "Phone"=>"1115552345"}, "CrewOnsite"=>"true", "FieldContact"=>{"Email"=>"example@example.com", "Name"=>"Field Contact", "Phone"=>"1235557924"}, "State"=>"ZZ", "Type"=>"Excavator", "Zip"=>"55555"}, "ReferenceRequestNumber"=>"", "RequestAction"=>"Restake", "RequestType"=>"Normal", "SequenceNumber"=>"2421", "ServiceArea"=>{"AdditionalServiceAreaCodes"=>{"SACode"=>["ZZL01", "ZZL02", "ZZL03"]}, "PrimaryServiceAreaCode"=>{"SACode"=>"ZZGL103"}}, "VersionNumber"=>"0"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_2[0m
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.3ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.350926"], ["updated_at", "2019-05-29 20:21:00.350926"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.4ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 539], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.352766"], ["updated_at", "2019-05-29 20:21:00.352766"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tickets"[0m
+Processing by Api::V1::TicketsController#create as JSON
+  Parameters: {"ContactCenter"=>"UPCA", "DateTimes"=>{"ExpirationDate"=>"2011/07/26 00:00:00", "LPMeetingAcceptDueDate"=>"", "LegalDateTime"=>"2011/07/08 07:00:00", "OverheadBeginDate"=>"", "OverheadEndDate"=>"", "RequestTakenDateTime"=>"2011/07/02 23:09:38", "ResponseDueDateTime"=>"2011/07/13 23:59:59", "RestakeDate"=>"2011/07/21 00:00:00", "TransmissionDateTime"=>""}, "ExcavationInfo"=>{"DigsiteInfo"=>{"AddressInfo"=>{"Address"=>{"AddressNum"=>["Address 1", "Address 2"]}, "County"=>"COUNTY", "Place"=>"PLACE", "State"=>"ST", "Street"=>{"Name"=>"Trinity", "Prefix"=>"", "Suffix"=>"SW", "Type"=>"Ave"}, "Zip"=>""}, "Intersection"=>{"ItoI"=>[{"State"=>"XX", "County"=>"FULERTON", "Place"=>"NORCROSS", "Prefix"=>"", "Name"=>"London", "Type"=>"St", "Suffix"=>"SW"}, {"State"=>"ZZ", "County"=>"COUNTY", "Place"=>"ATLANTA", "Prefix"=>"", "Name"=>"Jefferson", "Type"=>"Ave", "Suffix"=>"SW"}]}, "LocationType"=>"Multiple Address", "LookupBy"=>"MANUAL", "NearStreet"=>{"County"=>"SomeCounty", "Name"=>"", "Place"=>"City", "Prefix"=>"", "State"=>"XX", "Suffix"=>"", "Type"=>""}, "Subdivision"=>"", "WellKnownText"=>"POLYGON((-81.13390268058475 32.07206917625161,-81.14660562247929 32.04064386441295,-81.08858407706913 32.02259853170128,-81.05322183341679 32.02434500961698,-81.05047525138554 32.042681017283066,-81.0319358226746 32.06537765335268,-81.01202310294804 32.078469305179404,-81.02850259513554 32.07963291684719,-81.07759774894413 32.07090546831167,-81.12154306144413 32.08806865844325,-81.13390268058475 32.07206917625161))"}, "Explosives"=>"No", "HorizontalBoring"=>"Road, Driveway, and Sidewalk", "LocateInstructions"=>"locate along the r/o/w on both sides of the rd - including the rd itself - from inter to inter ", "ProjectDuration"=>"60 days", "ProjectStartDate"=>"2011/07/08 07:00:00", "Remarks"=>"Previous Request Number:05161-120-011 revious Request Number:06044-254-020 v revious Request Number:06171-300-030", "TypeOfWork"=>"rpr man hole tops", "UndergroundOverhead"=>"Underground", "Whitelined"=>"No", "WorkDoneFor"=>"gpc"}, "Excavator"=>{"Address"=>"555 Some RD", "City"=>"SOME PARK", "CompanyName"=>"John Doe CONSTRUCTION", "Contact"=>{"Email"=>"example@example.com", "Name"=>"Johnny Doe", "Phone"=>"1115552345"}, "CrewOnsite"=>"true", "FieldContact"=>{"Email"=>"example@example.com", "Name"=>"Field Contact", "Phone"=>"1235557924"}, "State"=>"ZZ", "Type"=>"Excavator", "Zip"=>"55555"}, "ReferenceRequestNumber"=>"", "RequestAction"=>"Restake", "RequestNumber"=>"09252012-00001", "RequestType"=>"Normal", "SequenceNumber"=>"2421", "ServiceArea"=>{"AdditionalServiceAreaCodes"=>{"SACode"=>["ZZL01", "ZZL02", "ZZL03"]}, "PrimaryServiceAreaCode"=>{"SACode"=>"ZZGL103"}}, "VersionNumber"=>"0"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.3ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "sequence_number", "request_type", "primary_sa_code", "additional_sa_code", "digi_site_info", "due_date_time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["request_number", "09252012-00001"], ["sequence_number", "2421"], ["request_type", "Normal"], ["primary_sa_code", "ZZGL103"], ["additional_sa_code", "---\n- ZZL01\n- ZZL02\n- ZZL03\n"], ["digi_site_info", "POLYGON((-81.13390268058475 32.07206917625161,-81.14660562247929 32.04064386441295,-81.08858407706913 32.02259853170128,-81.05322183341679 32.02434500961698,-81.05047525138554 32.042681017283066,-81.0319358226746 32.06537765335268,-81.01202310294804 32.078469305179404,-81.02850259513554 32.07963291684719,-81.07759774894413 32.07090546831167,-81.12154306144413 32.08806865844325,-81.13390268058475 32.07206917625161))"], ["due_date_time", "2011-07-13 23:59:59"], ["created_at", "2019-05-29 20:21:00.359765"], ["updated_at", "2019-05-29 20:21:00.359765"]]
+  [1m[36mExcavator Create (0.3ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "address", "city", "state", "zip_code", "crew_on_site", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["ticket_id", 540], ["company_name", "John Doe CONSTRUCTION"], ["address", "555 Some RD"], ["city", "SOME PARK"], ["state", "ZZ"], ["zip_code", "55555"], ["crew_on_site", true], ["created_at", "2019-05-29 20:21:00.361706"], ["updated_at", "2019-05-29 20:21:00.361706"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Completed 201 Created in 5ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tickets"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.3ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "request_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["request_number", "234567"], ["request_type", "Normal"], ["created_at", "2019-05-29 20:21:00.367068"], ["updated_at", "2019-05-29 20:21:00.367068"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mExcavator Create (0.3ms)[0m  [1m[32mINSERT INTO "excavators" ("ticket_id", "company_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["ticket_id", 541], ["company_name", "John Doe CONSTRUCTION"], ["created_at", "2019-05-29 20:21:00.369119"], ["updated_at", "2019-05-29 20:21:00.369119"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+Processing by Api::V1::TicketsController#create as JSON
+  Parameters: {"ContactCenter"=>"UPCA", "DateTimes"=>{"ExpirationDate"=>"2011/07/26 00:00:00", "LPMeetingAcceptDueDate"=>"", "LegalDateTime"=>"2011/07/08 07:00:00", "OverheadBeginDate"=>"", "OverheadEndDate"=>"", "RequestTakenDateTime"=>"2011/07/02 23:09:38", "ResponseDueDateTime"=>"2011/07/13 23:59:59", "RestakeDate"=>"2011/07/21 00:00:00", "TransmissionDateTime"=>""}, "ExcavationInfo"=>{"DigsiteInfo"=>{"AddressInfo"=>{"Address"=>{"AddressNum"=>["Address 1", "Address 2"]}, "County"=>"COUNTY", "Place"=>"PLACE", "State"=>"ST", "Street"=>{"Name"=>"Trinity", "Prefix"=>"", "Suffix"=>"SW", "Type"=>"Ave"}, "Zip"=>""}, "Intersection"=>{"ItoI"=>[{"State"=>"XX", "County"=>"FULERTON", "Place"=>"NORCROSS", "Prefix"=>"", "Name"=>"London", "Type"=>"St", "Suffix"=>"SW"}, {"State"=>"ZZ", "County"=>"COUNTY", "Place"=>"ATLANTA", "Prefix"=>"", "Name"=>"Jefferson", "Type"=>"Ave", "Suffix"=>"SW"}]}, "LocationType"=>"Multiple Address", "LookupBy"=>"MANUAL", "NearStreet"=>{"County"=>"SomeCounty", "Name"=>"", "Place"=>"City", "Prefix"=>"", "State"=>"XX", "Suffix"=>"", "Type"=>""}, "Subdivision"=>"", "WellKnownText"=>"POLYGON((-81.13390268058475 32.07206917625161,-81.14660562247929 32.04064386441295,-81.08858407706913 32.02259853170128,-81.05322183341679 32.02434500961698,-81.05047525138554 32.042681017283066,-81.0319358226746 32.06537765335268,-81.01202310294804 32.078469305179404,-81.02850259513554 32.07963291684719,-81.07759774894413 32.07090546831167,-81.12154306144413 32.08806865844325,-81.13390268058475 32.07206917625161))"}, "Explosives"=>"No", "HorizontalBoring"=>"Road, Driveway, and Sidewalk", "LocateInstructions"=>"locate along the r/o/w on both sides of the rd - including the rd itself - from inter to inter ", "ProjectDuration"=>"60 days", "ProjectStartDate"=>"2011/07/08 07:00:00", "Remarks"=>"Previous Request Number:05161-120-011 revious Request Number:06044-254-020 v revious Request Number:06171-300-030", "TypeOfWork"=>"rpr man hole tops", "UndergroundOverhead"=>"Underground", "Whitelined"=>"No", "WorkDoneFor"=>"gpc"}, "ReferenceRequestNumber"=>"", "RequestAction"=>"Restake", "RequestNumber"=>"09252012-00001", "RequestType"=>"Normal", "SequenceNumber"=>"2421", "ServiceArea"=>{"AdditionalServiceAreaCodes"=>{"SACode"=>["ZZL01", "ZZL02", "ZZL03"]}, "PrimaryServiceAreaCode"=>{"SACode"=>"ZZGL103"}}, "VersionNumber"=>"0"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mTicket Create (0.3ms)[0m  [1m[32mINSERT INTO "tickets" ("request_number", "sequence_number", "request_type", "primary_sa_code", "additional_sa_code", "digi_site_info", "due_date_time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["request_number", "09252012-00001"], ["sequence_number", "2421"], ["request_type", "Normal"], ["primary_sa_code", "ZZGL103"], ["additional_sa_code", "---\n- ZZL01\n- ZZL02\n- ZZL03\n"], ["digi_site_info", "POLYGON((-81.13390268058475 32.07206917625161,-81.14660562247929 32.04064386441295,-81.08858407706913 32.02259853170128,-81.05322183341679 32.02434500961698,-81.05047525138554 32.042681017283066,-81.0319358226746 32.06537765335268,-81.01202310294804 32.078469305179404,-81.02850259513554 32.07963291684719,-81.07759774894413 32.07090546831167,-81.12154306144413 32.08806865844325,-81.13390268058475 32.07206917625161))"], ["due_date_time", "2011-07-13 23:59:59"], ["created_at", "2019-05-29 20:21:00.374702"], ["updated_at", "2019-05-29 20:21:00.374702"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_2[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m

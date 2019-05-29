@@ -6,6 +6,7 @@ If you are running it for the first time, you need to create a database on Postg
 
 $ sudo -u postgres -i psql
 
+```
 postgres=# CREATE USER test WITH PASSWORD 'test';
 postgres=# CREATE DATABASE reservation;
 postgres=# GRANT ALL PRIVILEGES ON  DATABASE reservation to test;
@@ -13,13 +14,15 @@ postgres=# ALTER DATABASE reservation owner to test;
 postgres=# CREATE DATABASE reservation_test;
 postgres=# GRANT ALL PRIVILEGES ON  DATABASE reservation_test to test;
 postgres=# ALTER DATABASE reservation_test owner to test;
-
+```
 ## Run Migrations
 
 Once you have all containres running, execute the command command in a new terminal to run migrations:
 
+```
 `rake db:migrate`
 `rake db:migrate RAILS_ENV=test`
+```
 
 ## Start Application
 
