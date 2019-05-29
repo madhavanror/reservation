@@ -1,0 +1,138 @@
+Log A Ticket
+------------
+
+Parameters:
+  * request_number - Request Number
+  * request_type - Request Type
+  * company_name - Company Name
+
+Request:
+  POST api/v1/tickets
+  Accept: application/json
+  Content-Type: application/json
+
+  {"ContactCenter":"UPCA","RequestNumber":"09252012-00001","ReferenceRequestNumber":"","VersionNumber":"0","SequenceNumber":"2421","RequestType":"Normal","RequestAction":"Restake","DateTimes":{"RequestTakenDateTime":"2011/07/02 23:09:38","TransmissionDateTime":"","LegalDateTime":"2011/07/08 07:00:00","ResponseDueDateTime":"2011/07/13 23:59:59","RestakeDate":"2011/07/21 00:00:00","ExpirationDate":"2011/07/26 00:00:00","LPMeetingAcceptDueDate":"","OverheadBeginDate":"","OverheadEndDate":""},"ServiceArea":{"PrimaryServiceAreaCode":{"SACode":"ZZGL103"},"AdditionalServiceAreaCodes":{"SACode":["ZZL01","ZZL02","ZZL03"]}},"Excavator":{"CompanyName":"John Doe CONSTRUCTION","Address":"555 Some RD","City":"SOME PARK","State":"ZZ","Zip":"55555","Type":"Excavator","Contact":{"Name":"Johnny Doe","Phone":"1115552345","Email":"example@example.com"},"FieldContact":{"Name":"Field Contact","Phone":"1235557924","Email":"example@example.com"},"CrewOnsite":"true"},"ExcavationInfo":{"TypeOfWork":"rpr man hole tops","WorkDoneFor":"gpc","ProjectDuration":"60 days","ProjectStartDate":"2011/07/08 07:00:00","Explosives":"No","UndergroundOverhead":"Underground","HorizontalBoring":"Road, Driveway, and Sidewalk","Whitelined":"No","LocateInstructions":"locate along the r/o/w on both sides of the rd - including the rd itself - from inter to inter ","Remarks":"Previous Request Number:05161-120-011 revious Request Number:06044-254-020 v revious Request Number:06171-300-030","DigsiteInfo":{"LookupBy":"MANUAL","LocationType":"Multiple Address","Subdivision":"","AddressInfo":{"State":"ST","County":"COUNTY","Place":"PLACE","Zip":"","Address":{"AddressNum":["Address 1","Address 2"]},"Street":{"Prefix":"","Name":"Trinity","Type":"Ave","Suffix":"SW"}},"NearStreet":{"State":"XX","County":"SomeCounty","Place":"City","Prefix":"","Name":"","Type":"","Suffix":""},"Intersection":{"ItoI":[{"State":"XX","County":"FULERTON","Place":"NORCROSS","Prefix":"","Name":"London","Type":"St","Suffix":"SW"},{"State":"ZZ","County":"COUNTY","Place":"ATLANTA","Prefix":"","Name":"Jefferson","Type":"Ave","Suffix":"SW"}]},"WellKnownText":"POLYGON((-81.13390268058475 32.07206917625161,-81.14660562247929 32.04064386441295,-81.08858407706913 32.02259853170128,-81.05322183341679 32.02434500961698,-81.05047525138554 32.042681017283066,-81.0319358226746 32.06537765335268,-81.01202310294804 32.078469305179404,-81.02850259513554 32.07963291684719,-81.07759774894413 32.07090546831167,-81.12154306144413 32.08806865844325,-81.13390268058475 32.07206917625161))"}}}
+
+Response:
+  Status: 201 Created
+  Cache-Control: max-age=0, private, must-revalidate
+  Content-Length: 867
+  Content-Type: application/json; charset=utf-8
+  ETag: W/"0b31aedd548511a7c268eda7ff8c5557"
+  X-Request-Id: 7f092675-4098-4097-8054-53ec015c6883
+  X-Runtime: 0.010954
+
+  {
+    "ticket": {
+      "id": 347,
+      "request_number": "09252012-00001",
+      "sequence_number": "2421",
+      "request_type": "Normal",
+      "primary_sa_code": "ZZGL103",
+      "additional_sa_code": [
+        "ZZL01",
+        "ZZL02",
+        "ZZL03"
+      ],
+      "digi_site_info": "POLYGON((-81.13390268058475 32.07206917625161,-81.14660562247929 32.04064386441295,-81.08858407706913 32.02259853170128,-81.05322183341679 32.02434500961698,-81.05047525138554 32.042681017283066,-81.0319358226746 32.06537765335268,-81.01202310294804 32.078469305179404,-81.02850259513554 32.07963291684719,-81.07759774894413 32.07090546831167,-81.12154306144413 32.08806865844325,-81.13390268058475 32.07206917625161))",
+      "due_date_time": "2011-07-13T23:59:59.000Z"
+    },
+    "excavator": {
+      "id": 304,
+      "ticket_id": 347,
+      "company_name": "John Doe CONSTRUCTION",
+      "address": "555 Some RD",
+      "city": "SOME PARK",
+      "state": "ZZ",
+      "zip_code": "55555",
+      "crew_on_site": true
+    },
+    "message": "Saved Successfully..!"
+  }
+
+
+Get All Tickets
+---------------
+
+Request:
+  GET api/v1/tickets/show_tickets
+  Accept: application/json
+  Content-Type: application/json
+
+Response:
+  Status: 200 OK
+  Cache-Control: max-age=0, private, must-revalidate
+  Content-Length: 342
+  Content-Type: application/json; charset=utf-8
+  ETag: W/"b2ab44d9492d4928354c73c231176896"
+  X-Request-Id: 88b980b4-16d5-4fb1-a257-2782bec17a1c
+  X-Runtime: 0.006388
+
+  [
+    {
+      "ticket": {
+        "id": 348,
+        "request_number": "234567",
+        "sequence_number": null,
+        "request_type": "Normal",
+        "primary_sa_code": null,
+        "additional_sa_code": null,
+        "digi_site_info": null,
+        "due_date_time": null
+      },
+      "excavator": {
+        "id": 305,
+        "ticket_id": 348,
+        "company_name": "John Doe CONSTRUCTION",
+        "address": null,
+        "city": null,
+        "state": null,
+        "zip_code": null,
+        "crew_on_site": null
+      }
+    }
+  ]
+
+
+Get the ticket by id
+--------------------
+
+Parameters:
+  * id - Ticket Id
+
+Request:
+  GET api/v1/tickets/ticket/349
+  Accept: application/json
+  Content-Type: application/json
+
+Response:
+  Status: 200 OK
+  Cache-Control: max-age=0, private, must-revalidate
+  Content-Length: 340
+  Content-Type: application/json; charset=utf-8
+  ETag: W/"38c9e59f028766209c1ac4d31f094739"
+  X-Request-Id: 3e02b890-b30a-46d1-a4f0-587de798e841
+  X-Runtime: 0.003691
+
+  {
+    "ticket": {
+      "id": 349,
+      "request_number": "234567",
+      "sequence_number": null,
+      "request_type": "Normal",
+      "primary_sa_code": null,
+      "additional_sa_code": null,
+      "digi_site_info": null,
+      "due_date_time": null
+    },
+    "excavator": {
+      "id": 306,
+      "ticket_id": 349,
+      "company_name": "John Doe CONSTRUCTION",
+      "address": null,
+      "city": null,
+      "state": null,
+      "zip_code": null,
+      "crew_on_site": null
+    }
+  }

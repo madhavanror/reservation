@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tickets API</title>
+    <meta charset="utf-8">
+    <style>
+      
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #404040;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+
+pre {
+  background-color: #f5f5f5;
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 18px;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+td.required .name:after {
+  float: right;
+  content: "required";
+  font-weight: normal;
+  color: #F08080;
+}
+
+a{
+  color: #0069d6;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404040;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3{
+  font-size: 18px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+table{
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  border-collapse: separate;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+table th+th, table td+td {
+  border-left: 1px solid #ddd;
+}
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 18px;
+  text-align: left;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tickets API</h1>
+
+      <div class="article">
+        <h2>Get All Tickets</h2>
+        <h3>GET api/v1/tickets/show_tickets</h3>
+
+
+
+          <h3>Request</h3>
+
+            <h4>Headers</h4>
+            <pre class="request headers">Accept: application/json
+Content-Type: application/json</pre>
+
+          <h4>Route</h4>
+          <pre class="request route highlight">GET api/v1/tickets/show_tickets</pre>
+
+
+
+            <h4>cURL</h4>
+            <pre class="request curl">curl -g &quot;http://localhost:3000api/v1/tickets/show_tickets&quot; -X GET \
+	-H &quot;Accept: application/json&quot; \
+	-H &quot;Content-Type: application/json&quot; \
+	-H &quot;Host: example.org&quot; \
+	-H &quot;Cookie: &quot;</pre>
+
+            <h3>Response</h3>
+              <h4>Headers</h4>
+              <pre class="response headers">Content-Type: application/json; charset=utf-8
+ETag: W/&quot;b2ab44d9492d4928354c73c231176896&quot;
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 88b980b4-16d5-4fb1-a257-2782bec17a1c
+X-Runtime: 0.006388
+Content-Length: 342</pre>
+            <h4>Status</h4>
+            <pre class="response status">200 OK</pre>
+              <h4>Body</h4>
+              <pre class="response body">[
+  {
+    &quot;ticket&quot;: {
+      &quot;id&quot;: 348,
+      &quot;request_number&quot;: &quot;234567&quot;,
+      &quot;sequence_number&quot;: null,
+      &quot;request_type&quot;: &quot;Normal&quot;,
+      &quot;primary_sa_code&quot;: null,
+      &quot;additional_sa_code&quot;: null,
+      &quot;digi_site_info&quot;: null,
+      &quot;due_date_time&quot;: null
+    },
+    &quot;excavator&quot;: {
+      &quot;id&quot;: 305,
+      &quot;ticket_id&quot;: 348,
+      &quot;company_name&quot;: &quot;John Doe CONSTRUCTION&quot;,
+      &quot;address&quot;: null,
+      &quot;city&quot;: null,
+      &quot;state&quot;: null,
+      &quot;zip_code&quot;: null,
+      &quot;crew_on_site&quot;: null
+    }
+  }
+]</pre>
+      </div>
+    </div>
+  </body>
+</html>

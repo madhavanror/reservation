@@ -1,0 +1,107 @@
+default:
+  adapter: mysql2
+  host: localhost
+  database: cbus
+  port: 3306
+  username: root
+  password: 
+  encoding: utf8
+  reconnect: false
+  pool: 10
+  min_messages: ERROR
+development:
+  adapter: mysql2
+  host: localhost
+  database: cbus
+  port: 3306
+  username: root
+  password: 
+  encoding: utf8
+  reconnect: false
+  pool: 10
+  min_messages: ERROR
+production:
+  adapter: mysql2
+  host: localhost
+  database: orange_db
+  port: 3306
+  username: root
+  password: 
+  encoding: utf8
+  reconnect: false
+  pool: 10
+  min_messages: ERROR
+ts_db_config:
+  adapter: mysql2
+  host: localhost
+  database: ts_prod_config
+  port: 3306
+  username: root
+  password: 
+  encoding: utf8
+  reconnect: false
+  pool: 10
+  min_messages: ERROR
+
+ts_api_config:
+  adapter: mysql2
+  host: localhost
+  database: ts_agent
+  port: 3306
+  username: root
+  password: 
+  encoding: utf8
+  reconnect: false
+  pool: 10
+  min_messages: ERROR
+db1:
+  adapter: mysql2
+  host: localhost
+  database: orange_db
+  port: 3306
+  username: root
+  password: 
+  encoding: utf8
+  reconnect: false
+  pool: 10
+  min_messages: ERROR
+db2:
+  adapter: mysql2
+  host: localhost
+  database: srs_db
+  port: 3306
+  username: root
+  password: 
+  encoding: utf8
+  reconnect: false
+  pool: 10
+  min_messages: ERROR
+test:
+  host: localhost
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: ticket_simply_test
+  pool: 10
+  username: root
+  password: 
+test3214:
+  host: localhost
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: ticket_simply_test3214
+  pool: 10
+  username: root
+  password: 
+ts_test_db_config:
+  adapter: mysql2
+  host: localhost
+  database: ts_test_db_config
+  port: 3306
+  username: root
+  password: 
+  encoding: utf8
+  reconnect: false
+  pool: 10
+  min_messages: ERROR

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 
+  request_number: 
+  sequence_number: 
+  request_type: 
+
+two:
+  id: 
+  request_number: 
+  sequence_number: 
+  request_type: 

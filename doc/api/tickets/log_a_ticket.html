@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tickets API</title>
+    <meta charset="utf-8">
+    <style>
+      
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #404040;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+
+pre {
+  background-color: #f5f5f5;
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 18px;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+td.required .name:after {
+  float: right;
+  content: "required";
+  font-weight: normal;
+  color: #F08080;
+}
+
+a{
+  color: #0069d6;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404040;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3{
+  font-size: 18px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+table{
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  border-collapse: separate;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+table th+th, table td+td {
+  border-left: 1px solid #ddd;
+}
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 18px;
+  text-align: left;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tickets API</h1>
+
+      <div class="article">
+        <h2>Log A Ticket</h2>
+        <h3>POST api/v1/tickets</h3>
+
+          <h3>Parameters</h3>
+          <table class="parameters table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="required">
+                    <span class="name">request_number</span>
+                </td>
+                <td>
+                  <span class="description">Request Number</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="required">
+                    <span class="name">request_type</span>
+                </td>
+                <td>
+                  <span class="description">Request Type</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="required">
+                    <span class="name">company_name</span>
+                </td>
+                <td>
+                  <span class="description">Company Name</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <h3>Request</h3>
+
+            <h4>Headers</h4>
+            <pre class="request headers">Accept: application/json
+Content-Type: application/json</pre>
+
+          <h4>Route</h4>
+          <pre class="request route highlight">POST api/v1/tickets</pre>
+
+
+            <h4>Body</h4>
+            <pre class="request body">{"ContactCenter":"UPCA","RequestNumber":"09252012-00001","ReferenceRequestNumber":"","VersionNumber":"0","SequenceNumber":"2421","RequestType":"Normal","RequestAction":"Restake","DateTimes":{"RequestTakenDateTime":"2011/07/02 23:09:38","TransmissionDateTime":"","LegalDateTime":"2011/07/08 07:00:00","ResponseDueDateTime":"2011/07/13 23:59:59","RestakeDate":"2011/07/21 00:00:00","ExpirationDate":"2011/07/26 00:00:00","LPMeetingAcceptDueDate":"","OverheadBeginDate":"","OverheadEndDate":""},"ServiceArea":{"PrimaryServiceAreaCode":{"SACode":"ZZGL103"},"AdditionalServiceAreaCodes":{"SACode":["ZZL01","ZZL02","ZZL03"]}},"Excavator":{"CompanyName":"John Doe CONSTRUCTION","Address":"555 Some RD","City":"SOME PARK","State":"ZZ","Zip":"55555","Type":"Excavator","Contact":{"Name":"Johnny Doe","Phone":"1115552345","Email":"example@example.com"},"FieldContact":{"Name":"Field Contact","Phone":"1235557924","Email":"example@example.com"},"CrewOnsite":"true"},"ExcavationInfo":{"TypeOfWork":"rpr man hole tops","WorkDoneFor":"gpc","ProjectDuration":"60 days","ProjectStartDate":"2011/07/08 07:00:00","Explosives":"No","UndergroundOverhead":"Underground","HorizontalBoring":"Road, Driveway, and Sidewalk","Whitelined":"No","LocateInstructions":"locate along the r/o/w on both sides of the rd - including the rd itself - from inter to inter ","Remarks":"Previous Request Number:05161-120-011 revious Request Number:06044-254-020 v revious Request Number:06171-300-030","DigsiteInfo":{"LookupBy":"MANUAL","LocationType":"Multiple Address","Subdivision":"","AddressInfo":{"State":"ST","County":"COUNTY","Place":"PLACE","Zip":"","Address":{"AddressNum":["Address 1","Address 2"]},"Street":{"Prefix":"","Name":"Trinity","Type":"Ave","Suffix":"SW"}},"NearStreet":{"State":"XX","County":"SomeCounty","Place":"City","Prefix":"","Name":"","Type":"","Suffix":""},"Intersection":{"ItoI":[{"State":"XX","County":"FULERTON","Place":"NORCROSS","Prefix":"","Name":"London","Type":"St","Suffix":"SW"},{"State":"ZZ","County":"COUNTY","Place":"ATLANTA","Prefix":"","Name":"Jefferson","Type":"Ave","Suffix":"SW"}]},"WellKnownText":"POLYGON((-81.13390268058475 32.07206917625161,-81.14660562247929 32.04064386441295,-81.08858407706913 32.02259853170128,-81.05322183341679 32.02434500961698,-81.05047525138554 32.042681017283066,-81.0319358226746 32.06537765335268,-81.01202310294804 32.078469305179404,-81.02850259513554 32.07963291684719,-81.07759774894413 32.07090546831167,-81.12154306144413 32.08806865844325,-81.13390268058475 32.07206917625161))"}}}</pre>
+
+            <h4>cURL</h4>
+            <pre class="request curl">curl &quot;http://localhost:3000api/v1/tickets&quot; -d &#39;{&quot;ContactCenter&quot;:&quot;UPCA&quot;,&quot;RequestNumber&quot;:&quot;09252012-00001&quot;,&quot;ReferenceRequestNumber&quot;:&quot;&quot;,&quot;VersionNumber&quot;:&quot;0&quot;,&quot;SequenceNumber&quot;:&quot;2421&quot;,&quot;RequestType&quot;:&quot;Normal&quot;,&quot;RequestAction&quot;:&quot;Restake&quot;,&quot;DateTimes&quot;:{&quot;RequestTakenDateTime&quot;:&quot;2011/07/02 23:09:38&quot;,&quot;TransmissionDateTime&quot;:&quot;&quot;,&quot;LegalDateTime&quot;:&quot;2011/07/08 07:00:00&quot;,&quot;ResponseDueDateTime&quot;:&quot;2011/07/13 23:59:59&quot;,&quot;RestakeDate&quot;:&quot;2011/07/21 00:00:00&quot;,&quot;ExpirationDate&quot;:&quot;2011/07/26 00:00:00&quot;,&quot;LPMeetingAcceptDueDate&quot;:&quot;&quot;,&quot;OverheadBeginDate&quot;:&quot;&quot;,&quot;OverheadEndDate&quot;:&quot;&quot;},&quot;ServiceArea&quot;:{&quot;PrimaryServiceAreaCode&quot;:{&quot;SACode&quot;:&quot;ZZGL103&quot;},&quot;AdditionalServiceAreaCodes&quot;:{&quot;SACode&quot;:[&quot;ZZL01&quot;,&quot;ZZL02&quot;,&quot;ZZL03&quot;]}},&quot;Excavator&quot;:{&quot;CompanyName&quot;:&quot;John Doe CONSTRUCTION&quot;,&quot;Address&quot;:&quot;555 Some RD&quot;,&quot;City&quot;:&quot;SOME PARK&quot;,&quot;State&quot;:&quot;ZZ&quot;,&quot;Zip&quot;:&quot;55555&quot;,&quot;Type&quot;:&quot;Excavator&quot;,&quot;Contact&quot;:{&quot;Name&quot;:&quot;Johnny Doe&quot;,&quot;Phone&quot;:&quot;1115552345&quot;,&quot;Email&quot;:&quot;example@example.com&quot;},&quot;FieldContact&quot;:{&quot;Name&quot;:&quot;Field Contact&quot;,&quot;Phone&quot;:&quot;1235557924&quot;,&quot;Email&quot;:&quot;example@example.com&quot;},&quot;CrewOnsite&quot;:&quot;true&quot;},&quot;ExcavationInfo&quot;:{&quot;TypeOfWork&quot;:&quot;rpr man hole tops&quot;,&quot;WorkDoneFor&quot;:&quot;gpc&quot;,&quot;ProjectDuration&quot;:&quot;60 days&quot;,&quot;ProjectStartDate&quot;:&quot;2011/07/08 07:00:00&quot;,&quot;Explosives&quot;:&quot;No&quot;,&quot;UndergroundOverhead&quot;:&quot;Underground&quot;,&quot;HorizontalBoring&quot;:&quot;Road, Driveway, and Sidewalk&quot;,&quot;Whitelined&quot;:&quot;No&quot;,&quot;LocateInstructions&quot;:&quot;locate along the r/o/w on both sides of the rd - including the rd itself - from inter to inter &quot;,&quot;Remarks&quot;:&quot;Previous Request Number:05161-120-011 revious Request Number:06044-254-020 v revious Request Number:06171-300-030&quot;,&quot;DigsiteInfo&quot;:{&quot;LookupBy&quot;:&quot;MANUAL&quot;,&quot;LocationType&quot;:&quot;Multiple Address&quot;,&quot;Subdivision&quot;:&quot;&quot;,&quot;AddressInfo&quot;:{&quot;State&quot;:&quot;ST&quot;,&quot;County&quot;:&quot;COUNTY&quot;,&quot;Place&quot;:&quot;PLACE&quot;,&quot;Zip&quot;:&quot;&quot;,&quot;Address&quot;:{&quot;AddressNum&quot;:[&quot;Address 1&quot;,&quot;Address 2&quot;]},&quot;Street&quot;:{&quot;Prefix&quot;:&quot;&quot;,&quot;Name&quot;:&quot;Trinity&quot;,&quot;Type&quot;:&quot;Ave&quot;,&quot;Suffix&quot;:&quot;SW&quot;}},&quot;NearStreet&quot;:{&quot;State&quot;:&quot;XX&quot;,&quot;County&quot;:&quot;SomeCounty&quot;,&quot;Place&quot;:&quot;City&quot;,&quot;Prefix&quot;:&quot;&quot;,&quot;Name&quot;:&quot;&quot;,&quot;Type&quot;:&quot;&quot;,&quot;Suffix&quot;:&quot;&quot;},&quot;Intersection&quot;:{&quot;ItoI&quot;:[{&quot;State&quot;:&quot;XX&quot;,&quot;County&quot;:&quot;FULERTON&quot;,&quot;Place&quot;:&quot;NORCROSS&quot;,&quot;Prefix&quot;:&quot;&quot;,&quot;Name&quot;:&quot;London&quot;,&quot;Type&quot;:&quot;St&quot;,&quot;Suffix&quot;:&quot;SW&quot;},{&quot;State&quot;:&quot;ZZ&quot;,&quot;County&quot;:&quot;COUNTY&quot;,&quot;Place&quot;:&quot;ATLANTA&quot;,&quot;Prefix&quot;:&quot;&quot;,&quot;Name&quot;:&quot;Jefferson&quot;,&quot;Type&quot;:&quot;Ave&quot;,&quot;Suffix&quot;:&quot;SW&quot;}]},&quot;WellKnownText&quot;:&quot;POLYGON((-81.13390268058475 32.07206917625161,-81.14660562247929 32.04064386441295,-81.08858407706913 32.02259853170128,-81.05322183341679 32.02434500961698,-81.05047525138554 32.042681017283066,-81.0319358226746 32.06537765335268,-81.01202310294804 32.078469305179404,-81.02850259513554 32.07963291684719,-81.07759774894413 32.07090546831167,-81.12154306144413 32.08806865844325,-81.13390268058475 32.07206917625161))&quot;}}}&#39; -X POST \
+	-H &quot;Accept: application/json&quot; \
+	-H &quot;Content-Type: application/json&quot; \
+	-H &quot;Host: example.org&quot; \
+	-H &quot;Cookie: &quot;</pre>
+
+            <h3>Response</h3>
+              <h4>Headers</h4>
+              <pre class="response headers">Content-Type: application/json; charset=utf-8
+ETag: W/&quot;0b31aedd548511a7c268eda7ff8c5557&quot;
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 7f092675-4098-4097-8054-53ec015c6883
+X-Runtime: 0.010954
+Content-Length: 867</pre>
+            <h4>Status</h4>
+            <pre class="response status">201 Created</pre>
+              <h4>Body</h4>
+              <pre class="response body">{
+  &quot;ticket&quot;: {
+    &quot;id&quot;: 347,
+    &quot;request_number&quot;: &quot;09252012-00001&quot;,
+    &quot;sequence_number&quot;: &quot;2421&quot;,
+    &quot;request_type&quot;: &quot;Normal&quot;,
+    &quot;primary_sa_code&quot;: &quot;ZZGL103&quot;,
+    &quot;additional_sa_code&quot;: [
+      &quot;ZZL01&quot;,
+      &quot;ZZL02&quot;,
+      &quot;ZZL03&quot;
+    ],
+    &quot;digi_site_info&quot;: &quot;POLYGON((-81.13390268058475 32.07206917625161,-81.14660562247929 32.04064386441295,-81.08858407706913 32.02259853170128,-81.05322183341679 32.02434500961698,-81.05047525138554 32.042681017283066,-81.0319358226746 32.06537765335268,-81.01202310294804 32.078469305179404,-81.02850259513554 32.07963291684719,-81.07759774894413 32.07090546831167,-81.12154306144413 32.08806865844325,-81.13390268058475 32.07206917625161))&quot;,
+    &quot;due_date_time&quot;: &quot;2011-07-13T23:59:59.000Z&quot;
+  },
+  &quot;excavator&quot;: {
+    &quot;id&quot;: 304,
+    &quot;ticket_id&quot;: 347,
+    &quot;company_name&quot;: &quot;John Doe CONSTRUCTION&quot;,
+    &quot;address&quot;: &quot;555 Some RD&quot;,
+    &quot;city&quot;: &quot;SOME PARK&quot;,
+    &quot;state&quot;: &quot;ZZ&quot;,
+    &quot;zip_code&quot;: &quot;55555&quot;,
+    &quot;crew_on_site&quot;: true
+  },
+  &quot;message&quot;: &quot;Saved Successfully..!&quot;
+}</pre>
+      </div>
+    </div>
+  </body>
+</html>

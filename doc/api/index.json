@@ -1,0 +1,31 @@
+{
+  "resources": [
+    {
+      "name": "Tickets",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Get All Tickets",
+          "link": "tickets/get_all_tickets.json",
+          "groups": "all",
+          "route": "api/v1/tickets/show_tickets",
+          "method": "get"
+        },
+        {
+          "description": "Get the ticket by id",
+          "link": "tickets/get_the_ticket_by_id.json",
+          "groups": "all",
+          "route": "api/v1/tickets/ticket/:id",
+          "method": "get"
+        },
+        {
+          "description": "Log A Ticket",
+          "link": "tickets/log_a_ticket.json",
+          "groups": "all",
+          "route": "api/v1/tickets",
+          "method": "post"
+        }
+      ]
+    }
+  ]
+}

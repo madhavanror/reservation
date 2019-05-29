@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://hpneo.dev/gmaps/prettify/prettify.css">
+<link rel="stylesheet" href="https://hpneo.dev/gmaps/examples/examples.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+<script src="https://hpneo.dev/gmaps/gmaps.js"></script>
+<script src="https://hpneo.dev/gmaps/prettify/prettify.js"></script>
+<style type="text/css">
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd !important;
+  text-align: left;
+  padding: 8px;
+}
+#map{
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+}
+
+</style>
+</head>
+<body>
+<h1>Ticket Detail</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Request Number</th>
+      <th>Sequence Number</th>
+      <th>Request Type</th>
+      <th>Primary SA Code</th>
+      <th>Additional SA Code</th>
+      <th>Company Name</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zip Code</th>
+      <th>Crew</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+     <tr>
+        <td><%= @ticket.id%></td>
+        <td><%= @ticket.request_number %></td>
+        <td><%= @ticket.sequence_number %></td>
+        <td><%= @ticket.request_type %></td>
+        <td><%= @ticket.primary_sa_code %></td>
+        <td><%= @ticket.additional_sa_code %></td>
+        <td><%= @ticket.excavator.company_name%></td>
+        <td><%= @ticket.excavator.city%></td>
+        <td><%= @ticket.excavator.state%></td>
+        <td><%= @ticket.excavator.zip_code%></td>
+        <td><%= @ticket.excavator.crew_on_site%></td>
+      </tr> 
+  </tbody>
+</table>
+
+<div id="map"></div>
+
+<%= link_to 'Back', tickets_path %>
+
+<script type="text/javascript">
+  var map;
+  $(document).ready(function(){
+    map = new GMaps({
+      div: '#map',
+      lat: -81.133902,
+      lng: -32.072069
+  });
+
+  var path = <%= @polygon %>;
+
+  polygon = map.drawPolygon({
+	  paths: path,
+	  strokeColor: '#BBD8E9',
+	  strokeOpacity: 1,
+	  strokeWeight: 3,
+	  fillColor: '#BBD8E9',
+	  fillOpacity: 0.6
+	});
+});
+</script>
+<br>
+</body>
+</html>

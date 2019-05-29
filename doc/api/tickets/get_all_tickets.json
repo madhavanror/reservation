@@ -1,0 +1,41 @@
+{
+  "resource": "Tickets",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "api/v1/tickets/show_tickets",
+  "description": "Get All Tickets",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "api/v1/tickets/show_tickets",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"ticket\": {\n      \"id\": 348,\n      \"request_number\": \"234567\",\n      \"sequence_number\": null,\n      \"request_type\": \"Normal\",\n      \"primary_sa_code\": null,\n      \"additional_sa_code\": null,\n      \"digi_site_info\": null,\n      \"due_date_time\": null\n    },\n    \"excavator\": {\n      \"id\": 305,\n      \"ticket_id\": 348,\n      \"company_name\": \"John Doe CONSTRUCTION\",\n      \"address\": null,\n      \"city\": null,\n      \"state\": null,\n      \"zip_code\": null,\n      \"crew_on_site\": null\n    }\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"b2ab44d9492d4928354c73c231176896\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "88b980b4-16d5-4fb1-a257-2782bec17a1c",
+        "X-Runtime": "0.006388",
+        "Content-Length": "342"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000api/v1/tickets/show_tickets\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}
